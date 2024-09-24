@@ -1,0 +1,76 @@
+﻿       body {
+            background-color: #FFFFFF;
+            color: #333333;
+            background-image: url(https://wallpapercave.com/wp/wp1991719.jpg);
+            font-family: sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        header {
+            margin-bottom: 20px;
+            background-color: #ec932f;
+            padding: 20px;
+            border-bottom: 2px solid #6F4E37;
+            text-align: center;
+            color: #e8612b;
+        }
+        main {
+            width: 60%;
+            background-color: #c1442f;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #ec932f;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #006633;
+        }
+        .menu {
+            margin-top: 10px;
+        }
+        .menu a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .locket {
+            width: 200px;
+            height: 250px; 
+            background-size: cover;
+            background-position: center;
+            border-radius: 50% / 70%;
+            border: 5px solid #ec932f; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+        #locket {
+            width: 200px;
+            height: 250px; 
+            background-size: cover;
+            background-position: center;
+            border-radius: 50% / 70%;
+            border: 5px solid #ec932f; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+        #render {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #6F4E37;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
