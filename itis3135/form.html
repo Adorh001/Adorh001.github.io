@@ -3,71 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adjartey Dorh | ITIS3135 <Form></Form></title>
+    <title>Adjartey Dorh | ITIS3135 Form</title>
     <link rel="stylesheet" href="./styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <header>
         <div data-include="components/header.html"></div>
     </header>
+    
     <img id="locket" src="./images/Falchion.png" alt="Latest Render">
     
     <main>
         <h2>Ambitious Wolf Gaming Commission Form</h2>
-        <form>
+        
+
+        <form id="arcade-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            <br>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <br>
         
-        
-        <fieldset>
-            <legend>Arcade Cabinet type</legend>
-            <input type="checkbox" id="original" name="type" value="original">
-            <label for="original">Original</label>
-            <input type="checkbox" id="bar-top" name="type" value="bar-top">
-            <label for="bar-top">Bar-top</label>
-            <input type="checkbox" id="cocktail" name="type" value="cocktail">
-            <label for="cocktail">Cocktail</label>
-            <input type="checkbox" id="cockpit" name="type" value="cockpit">
-            <label for="cockpit">Cockpit</label>
-        </fieldset>
+            <fieldset>
+                <legend>Arcade Cabinet Type</legend>
+                <label><input type="checkbox" id="original" name="type" value="original"> Original</label>
+                <label><input type="checkbox" id="bar-top" name="type" value="bar-top"> Bar-top</label>
+                <label><input type="checkbox" id="cocktail" name="type" value="cocktail"> Cocktail</label>
+                <label><input type="checkbox" id="cockpit" name="type" value="cockpit"> Cockpit</label>
+            </fieldset>
 
-        <fieldset>
-            <legend>UsagePersonal</legend>
-            <input type="checkbox" id="personal" name="type" value="personal">
-            <label for="personal">Personal</label>
-            <input type="checkbox" id="school" name="type" value="school">
-            <label for="school">School</label>
-            <input type="checkbox" id="bussiness" name="type" value="bussiness">
-            <label for="bussiness">Bussiness</label>
-        </fieldset>
+            <fieldset>
+                <legend>Usage</legend>
+                <label><input type="checkbox" id="personal" name="type" value="personal"> Personal</label>
+                <label><input type="checkbox" id="school" name="type" value="school"> School</label>
+                <label><input type="checkbox" id="business" name="type" value="business"> Business</label>
+            </fieldset>
 
-        <label for="age_group">Game:</label>
-        <select id="game" required>
-            <option value="">Select a Game</option>
-            <option value="halo">Halo</option>
-            <option value="mvc2">Marvel vs Capcom 2</option>
-            <option value="mech">Virtual-On</option>
-            <option value="other">Other (please contact)</option>
-        </select>
+            <label for="game">Game:</label>
+            <select id="game" name="game" required>
+                <option value="">Select a Game</option>
+                <option value="halo">Halo</option>
+                <option value="mvc2">Marvel vs Capcom 2</option>
+                <option value="mech">Virtual-On</option>
+                <option value="other">Other (please contact)</option>
+            </select>
 
-        <div class="form-buttons">
-            <button type="reset">Clear Form</button>
-            <button type="submit">Register Now</button>
-        </div>
+            <div class="form-buttons">
+                <button type="reset">Clear Form</button>
+                <button type="submit">Register Now</button>
+            </div>
         </form>
     </main>
 
-    
     <footer>
         <div data-include="components/footer.html"></div>
-        </footer>
-        <script src="scripts/include.js"></script>
+    </footer>
+    
+    <script src="scripts/include.js"></script>
 </body>
 </html>
-
