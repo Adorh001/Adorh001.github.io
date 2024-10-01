@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjartey Dorh | ITIS3135 tables</title>
+    <link rel="stylesheet" href="./styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <img id="locket" src="./images/Brave Sword.png" alt="Latest Render">
+    
+    <main>
+        <h2>HTML Tables</h2>
+        <h3>My table data: </h3>
+        <ol>
+           <li>Ace Ukiyo geats@aol.com</li> 
+           <li>Keiwa Sakurai tycoon@aol.com</li> 
+           <li>Neon Kurama na-go@aol.com</li> 
+           <li>Michinaga Azuma buffa@aol.com</li> 
+           <li>Win Hareruya punkjack@aol.com</li> 
+           <li>Daichi Isuzu nadge-sparow@aol.com</li> 
+           <li>Sara Sakurai hakubi@aol.com</li> 
+           <li>Ziin ziin@aol.com</li> 
+           <li>Kousei Kurama gya-go@aol.com</li> 
+        </ol>
+        <h3>Employee Data in simple table: </h3>
+        <table>
+            <thread>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Ace Ukiyo</td>
+                    <td>geats@aol.com</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Keiwa Sakurai</td>
+                    <td>tycoon@aol.com</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Neon Kurama</td>
+                    <td>buffa@aol.com</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Michinaga Azuma</td>
+                    <td>buffa@aol.com</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Win Hareruya</td>
+                    <td>punkjack@aol.com</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Daichi Isuzu</td>
+                    <td>nadge-sparow@aol.com</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Sara Sakurai</td>
+                    <td>hakubi@aol.com</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Ziin</td>
+                    <td>ziin@aol.com</td>
+                    <td>31</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Kousei Kurama</td>
+                    <td>gya-go@aol.com</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <table id="employee-data">
+            <thead>
+                <tr>
+                    <th class="Rank">Rank</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="department">Deza-Shin</td>
+                    <td>Ace Ukiyo</td>
+                    <td>geats@aol.com</td>
+                    <td>21</td>
+                    <td>$150,000</td>
+                </tr>
+                <tr>
+                    <td>Keiwa Sakurai</td>
+                    <td>tycoon@aol.com</td>
+                    <td>2</td>
+                    <td>$60,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="department">Player</td>
+                    <td>Neon Kurama</td>
+                    <td>buffa@aol.com</td>
+                    <td>11</td>
+                    <td>$90,000</td>
+                </tr>
+                <tr>
+                    <td>Michinaga Azuma</td>
+                    <td>buffa@aol.com</td>
+                    <td>5</td>
+                    <td>$75,000</td>
+                </tr>
+                <tr>
+                    <td>Daichi Isuzu</td>
+                    <td>nadge-sparow@aol.com</td>
+                    <td>10</td>
+                    <td>$85,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="department">Guard</td>
+                    <td>Win Hareruya</td>
+                    <td>punkjack@aol.com</td>
+                    <td>8</td>
+                    <td>$80,000</td>
+                </tr>
+                <tr>
+                    <td>Sara Sakurai</td>
+                    <td>hakubi@aol.com</td>
+                    <td>1</td>
+                    <td>$55,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="department">Supporter</td>
+                    <td>Ziin</td>
+                    <td>ziin@aol.com</td>
+                    <td>31</td>
+                    <td>$200,000</td>
+                </tr>
+                <tr>
+                    <td>Kousei Kurama</td>
+                    <td>gya-go@aol.com</td>
+                    <td>25</td>
+                    <td>$180,000</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td id="total-years">114</td>
+                    <td id="total-salary">$975,000</td>
+                    </tr>
+            </tbody>
+        </table>        
+    </main>
+
+    
+    <footer>
+        <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/include.js"></script>
+</body>
+</html>
+

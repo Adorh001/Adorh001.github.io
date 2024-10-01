@@ -15,7 +15,7 @@
             color: #e8612b;
         }
         main {
-            width: 60%;
+            
             background-color: #c1442f;
             margin: 20px auto;
             padding: 20px;
@@ -23,11 +23,25 @@
         }
         footer {
             background-color: #ec932f;
-            padding: 1%;;
             text-align: center;
-            position: fixed;
+            position: sticky;
             width: 100%;
             bottom: 0;
+            color: #e8612b;
+        }
+
+        .footer{
+            color: #492310;
+        }
+        h2{
+            color: #f5b249;
+            text-align: center;
+        }
+        p{
+            color: #f5b249;
+        }
+        section{
+            color: #f5b249;
         }
         a {
             color: #743619;
@@ -48,7 +62,7 @@
             background-size: cover;
             background-position: center;
             border-radius: 50% / 70%;
-            border: 5px solid #ec932f; 
+            
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
            display: block;
            margin-left: auto;
@@ -61,7 +75,7 @@
             background-size: cover;
             background-position: center;
             border-radius: 50% / 70%;
-            border: 5px solid #ec932f; 
+            
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
            display: block;
            margin-left: auto;
@@ -77,3 +91,42 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+      
+#employee-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2% 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+#employee-data th, #employee-data td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+#employee-data th {
+    background-color: #ec932f;
+    color: white;
+    text-align: center;
+}
+
+#employee-data td {
+    background-color: #f9f9f9;
+}
+
+#employee-data tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#employee-data tr:hover {
+    background-color: #ddd;
+}
+
+#employee-data .department {
+    background-color: #f5b249;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
