@@ -2,7 +2,7 @@
             background-color: #FFFFFF;
             color: #333333;
             background-image: url(https://wallpapercave.com/wp/wp1991719.jpg);
-            font-family: wingdings;
+            font-family: sans-serif;
             padding: 20px;
             margin: 0;
         }
@@ -18,10 +18,9 @@
             
             background-color: #c1442f;
             margin: 20px auto;
-            padding: 20px;
+            border: 20px;
             border-radius: 8px;
             max-width: 1200px;
-            width: 90%;
         }
 
         @media (min-width: 786px){
@@ -161,7 +160,6 @@
         }
 
         form {
-            width: 60%;
             margin: 0 auto;
             padding: 20px;
             background-color: #BA4D2C;
@@ -191,7 +189,6 @@
         form input[type="text"],
         form input[type="email"],
         form select {
-            width: 100%;
             padding: 10px;
             margin-top: 5px;
             border: 1px solid #411E11;
