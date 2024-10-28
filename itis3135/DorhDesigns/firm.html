@@ -14,7 +14,7 @@
         }
         header {
             background-color: #BA4D2C;
-            color: #ffffff; 
+            color: #411E11; 
             padding: 15px 0;
             text-align: center;
             font-size: 1.5em;
@@ -117,6 +117,18 @@
             <a href="#about">About</a>
         </div>
         <p>"Opening the Dorh to your future" - Designed by Adjartey Dorh</p>
+        <p class="footer">Certified in <a href="https://www.freecodecamp.org/certification/Adorh/responsive-web-design" target="_blank">Responsive Web Design</a></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+         <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+         <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    
+        <script>
+           document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
     </footer>
 </body>
 </html>

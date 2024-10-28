@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modelling Hobby</title>
+    <style type="text/css">
+        body {
+            background-color: #411e11;
+            color: #ee9638;
+            font-family: Arial, sans-serif;
+        }
+
+        main section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        main section.active {
+            display: block;
+            opacity: 1;
+        }
+
+        header {
+            background-color: #ba4d2c;
+            color: #ee9638;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ee9638;
+            padding: 0.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ba4d2c;
+            cursor: pointer;
+        }
+
+        footer {
+            position: relative;
+            /* Change from sticky to avoid overlap */
+            bottom: 0;
+            width: 100%;
+            background-color: #45271b;
+            color: #ee9638;
+            text-align: center;
+            padding: 1em;
+        }
+
+
+        footer a {
+            display: inline-block;
+            padding: 0.3em 0.6em;
+            margin: 0.3em;
+            color: #ee9638;
+            background-color: #ba4d2c;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        footer a:hover {
+            background-color: #ee9638;
+            color: #411e11;
+        }
+
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>3D Modelling and Art</h1>
+        <nav>
+            <a href="#" onclick="showSelection('home')">Home</a>
+            <a href="#" onclick="showSelection('who')">About Me</a>
+            <a href="#" onclick="showSelection('where')">Best Locations</a>
+            <a href="#" onclick="showSelection('when')">Best Times</a>
+            <a href="#" onclick="showSelection('how')">How it works</a>
+            <a href="#" onclick="showSelection('why')">Why do I love it?</a>
+            <a href="#" onclick="showSelection('ai')">AI prompts used</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>What is 3D Modelling?
+                3D modelling is the process of creating three-dimensional representations of an object or surface.
+                This is normally accomplished through a computer based modelling software like Blender, Autodesk Maya,
+                3DS Max, and many others.
+                It is a means of recreating our world on the computer and can be a means of art.
+                I personally use it for game development but there are other uses like cosplay, building tools, even
+                construction.
+            </p>
+            <figure>
+                <img src="https://download.blender.org/branding/blender_logo_socket.png" alt="Blender Logo">
+                <figcaption>Logo of my preferred 3D modelling software</figcaption>
+            </figure>
+        </section>
+
+        <section id="who">
+            <h2>Who</h2>
+            <p>My name is Adjartey. I am 26 years old, I am from West Africa and I am a massive gamer.
+                Ever since elementary school I have been obsessed with making video games and I
+                even made games using the Cartoon Network game maker and had multiple levels submitted within
+                those systems before the shutdown. At the start I thought I would work on programming. Then at CPCC I
+                learned
+                that I had more fun working in Maya and creating models. It has been almost six years since I started
+                working in 3D
+                and I have only been working in Blender for about two to three of those years,
+                and I plan to keep working at this for as long as I can still move.
+            </p>
+            <figure>
+                <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4dvkzqkb3c5e3zmnv2rabtiy/bafkreibdpmx5z7fcbxfuoa47gferbzeinhiphjtpp4ikpo7dujnffcxrvi@jpeg"
+                    alt="Shadow character model">
+                <figcaption>Shadow. My latest character model</figcaption>
+            </figure>
+        </section>
+
+        <section id="when">
+            <h2>When</h2>
+            <p>Best times to work on modelling is anytime that you feel like you can sit down for an hour or more and
+                work without caring what time it is.
+                For me the best time is around sunset when the lights come through the blinds and I can sit down with a
+                cup of tea, turn on my music, and work.
+            </p>
+            <figure>
+                <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4dvkzqkb3c5e3zmnv2rabtiy/bafkreiabzbc3skntc5n2bjl6hw5ddksbjuqbu4fvfl6sr2gkgowgtgi2am@jpeg"
+                    alt="Excalibur">
+                <figcaption>One of my Swordtember submissions</figcaption>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Where</h2>
+            <p>The best place to model is honestly where you feel most comfortable. I prefer to work in my room because
+                it feels proper.
+                If not my room then someplace quiet or around people who I can be calm around.
+            </p>
+            <figure>
+                <img src="images/Satan Saber.png" alt="Satan Saber">
+                <figcaption>Satan Saber from Kamen Rider Black</figcaption>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How</h2>
+            <p>Once you find what you want to make you will have to find several references and go through trial and
+                error at first until you get it down.
+                You choose a program based on what you need, maya for modelling and animation, 3DS Max for construction,
+                or Blender for just a jack of all trades.
+                After that you just create, normally starting with a cube.
+            </p>
+            <figure>
+                <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4dvkzqkb3c5e3zmnv2rabtiy/bafkreicjsynifctv4jjzdk733om6w2d4asslroo6ghvof2wh5fb3nxb3ey@jpeg"
+                    alt="Hollow mask">
+                <figcaption>A mask that started from a cube</figcaption>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+            <p>Well, it is calming, it is fun, it is just something that I can use to get out what I see in my head.
+                Modelling is something that I use to destress most days and to tell stories other days.
+                It is something that I can use to create things that I like, for instance creating swords from shows
+                that I love.
+            </p>
+            <figure>
+                <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4dvkzqkb3c5e3zmnv2rabtiy/bafkreihdevfwuedw3ge4vfkvybzj3vrw3py7mwc7tdd4op37aotqnhgsv4@jpeg"
+                    alt="Kanshou and Bakuya">
+                <figcaption>One of my Swordtember submissions</figcaption>
+            </figure>
+        </section>
+
+        <section id="ai">
+            <h2>AI Prompts Used</h2>
+            <p>Prompts used: "How does this look?", "Does this fit properly?", "How would you use JS to hide each
+                section?", "Do these colors fit the CRAP model?", "How can I optimize this?", "Final check, does this fit CRAP?"</p>
+            <figure>
+                <img>
+                <figcaption></figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">Designed by DorhDesigns. All rights reserved.©2024</p>
+        <p class="footer">Certified in <a href="https://www.freecodecamp.org/certification/Adorh/responsive-web-design"
+                target="_blank">Responsive Web Design</a></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px"
+                src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </footer>
+
+    <script>
+        function showSelection(sectionId) {
+            document.querySelectorAll('main section').forEach(section => {
+                section.classList.toggle('active', section.id === sectionId);
+            });
+        }
+        document.addEventListener("DOMContentLoaded", () => showSelection('home'));
+
+    </script>
