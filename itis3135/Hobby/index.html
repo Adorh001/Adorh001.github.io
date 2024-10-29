@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style type="text/css">
         body {
             background-color: #411e11;
@@ -18,7 +19,7 @@
             transition: opacity 0.5s ease;
         }
 
-        main section.active {
+        main .active {
             display: block;
             opacity: 1;
         }
@@ -50,7 +51,6 @@
             background-color: #45271b;
             color: #ee9638;
             text-align: center;
-            padding: 1em;
         }
 
 
@@ -86,10 +86,10 @@
         <nav>
             <a href="#" onclick="showSelection('home')">Home</a>
             <a href="#" onclick="showSelection('who')">About Me</a>
-            <a href="#" onclick="showSelection('where')">Best Locations</a>
+            <a href="#" onclick="showSelection('where')">Best place to Model</a>
             <a href="#" onclick="showSelection('when')">Best Times</a>
-            <a href="#" onclick="showSelection('how')">How it works</a>
-            <a href="#" onclick="showSelection('why')">Why do I love it?</a>
+            <a href="#" onclick="showSelection('how')">How to start?</a>
+            <a href="#" onclick="showSelection('why')">Why?</a>
             <a href="#" onclick="showSelection('ai')">AI prompts used</a>
         </nav>
     </header>
@@ -149,6 +149,7 @@
             <p>The best place to model is honestly where you feel most comfortable. I prefer to work in my room because
                 it feels proper.
                 If not my room then someplace quiet or around people who I can be calm around.
+                Normally with a cup of tea and or a warm blanket nearby.
             </p>
             <figure>
                 <img src="images/Satan Saber.png" alt="Satan Saber">
@@ -163,6 +164,9 @@
                 You choose a program based on what you need, maya for modelling and animation, 3DS Max for construction,
                 or Blender for just a jack of all trades.
                 After that you just create, normally starting with a cube.
+                There are tons of youtube videos that can show you what to do and there are plenty that show you the basics.
+                Once you have the basics then it's just applying the fundementals and building up on what you know.
+                Above all else just relaxing.
             </p>
             <figure>
                 <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4dvkzqkb3c5e3zmnv2rabtiy/bafkreicjsynifctv4jjzdk733om6w2d4asslroo6ghvof2wh5fb3nxb3ey@jpeg"
@@ -187,7 +191,7 @@
 
         <section id="ai">
             <h2>AI Prompts Used</h2>
-            <p>Prompts used: "How does this look?", "Does this fit properly?", "How would you use JS to hide each
+            <p>Prompts used: "Can you simplify the instructions?",  "How does this look?", "Does this fit properly?", "How would you use JS to hide each
                 section?", "Do these colors fit the CRAP model?", "How can I optimize this?", "Final check, does this
                 fit CRAP?"</p>
             <figure>
@@ -214,13 +218,16 @@
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         </script>
     </footer>
-
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script>
         function showSelection(sectionId) {
-            document.querySelectorAll('main section').forEach(section => {
+            document.querySelectorAll('main section').forEach((section) => {
                 section.classList.toggle('active', section.id === sectionId);
             });
         }
         document.addEventListener("DOMContentLoaded", () => showSelection('home'));
 
     </script>
+</body>
+
+</html>
