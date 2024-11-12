@@ -12,48 +12,67 @@
         <div data-include="components/header.html"></div>
     </header>
     
-    <img id="locket" src="./images/Falchion.png" alt="Latest Render">
-    
     <main>
         <h2>Ambitious Wolf Gaming Commission Form</h2>
-        
 
-        <form id="arcade-form">
+
+        <form id="arcade-form" action="#" method="post">
+
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required size="30" placeholder="Enter your full name">
+            
+ 
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required size="15" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
 
+   
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
+            <input type="email" id="email" name="email" required size="30" placeholder="Enter your email address">
+
+
+            <label for="project-name">Project Name:</label>
+            <input type="text" id="project-name" name="project-name" size="30" placeholder="Enter project title">
+
+            <label for="budget">Budget (USD):</label>
+            <input type="number" id="budget" name="budget" size="30" placeholder="Enter your budget" min="1" max="10000" required>
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline" required>
+
+   
             <fieldset>
-                <legend>Arcade Cabinet Type</legend>
-                <label><input type="checkbox" id="original" name="type" value="original"> Original</label>
-                <label><input type="checkbox" id="bar-top" name="type" value="bar-top"> Bar-top</label>
-                <label><input type="checkbox" id="cocktail" name="type" value="cocktail"> Cocktail</label>
-                <label><input type="checkbox" id="cockpit" name="type" value="cockpit"> Cockpit</label>
+                <legend>Arcade Cabinet Type (choose one or more):</legend>
+                <label><input type="checkbox" name="cabinet" value="original"> Original</label>
+                <label><input type="checkbox" name="cabinet" value="bar-top"> Bar-top</label>
+                <label><input type="checkbox" name="cabinet" value="cocktail"> Cocktail</label>
+                <label><input type="checkbox" name="cabinet" value="cockpit"> Cockpit</label>
             </fieldset>
 
+   
             <fieldset>
-                <legend>Usage</legend>
-                <label><input type="checkbox" id="personal" name="type" value="personal"> Personal</label>
-                <label><input type="checkbox" id="school" name="type" value="school"> School</label>
-                <label><input type="checkbox" id="business" name="type" value="business"> Business</label>
+                <legend>Usage (choose one):</legend>
+                <label><input type="radio" name="usage" value="personal" required> Personal</label>
+                <label><input type="radio" name="usage" value="school"> School</label>
+                <label><input type="radio" name="usage" value="business"> Business</label>
             </fieldset>
 
-            <label for="game">Game:</label>
+
+            <label for="game">Favorite Game:</label>
             <select id="game" name="game" required>
                 <option value="">Select a Game</option>
                 <option value="halo">Halo</option>
                 <option value="mvc2">Marvel vs Capcom 2</option>
                 <option value="mech">Virtual-On</option>
-                <option value="other">Other (please contact)</option>
+                <option value="other">Other (please specify)</option>
             </select>
 
+  
             <div class="form-buttons">
                 <button type="reset">Clear Form</button>
-                <button type="submit">Register Now</button>
+                <button type="submit">Submit Now</button>
             </div>
         </form>
+    
     </main>
 
     <footer>
