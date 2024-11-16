@@ -1,44 +1,135 @@
-/* General Styles */
+/* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 2rem;
-    background: #f4f4f4;
-  }
-  
-  form input, form textarea, form button {
-    display: block;
-    margin: 1rem 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #45271B; /* Saddle Brown background */
+  color: #EEE; /* Light text for contrast */
+  line-height: 1.6;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #411E11; /* Black Coffee */
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1, footer p {
+  margin: 0;
+  color: #EE9638; /* Tangerine for highlights */
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #EE9638; /* Tangerine links */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #BA4D2C; /* Persian Red on hover */
+}
+
+/* Main Section */
+main {
+  padding: 2rem;
+  background-color: #8F462A; /* Dark Brown for section backgrounds */
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background-color: #EE9638; /* Tangerine hero background */
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #411E11; /* Darker text for contrast */
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Forms */
+form input, form textarea, form button {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #BA4D2C; /* Persian Red border */
+  border-radius: 4px;
+  background-color: #EEE; /* Light background for inputs */
+  color: #411E11; /* Dark text for readability */
+}
+
+form input:focus, form textarea:focus {
+  border-color: #EE9638; /* Tangerine focus state */
+  outline: none;
+}
+
+form button {
+  background-color: #BA4D2C; /* Persian Red buttons */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #EE9638; /* Tangerine on hover */
+}
+
+/* Lists */
+ul {
+  list-style: square inside;
+  padding: 1rem;
+  background-color: #411E11; /* Black Coffee for list backgrounds */
+  border-radius: 8px;
+  color: #EEE; /* Light text */
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* Proximity and Alignment */
+ul li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background-color: #411E11; /* Black Coffee */
+  padding: 1.5rem;
+  color: white;
+  font-size: 0.9rem;
+  border-top: 4px solid #BA4D2C; /* Persian Red border accent */
+}
