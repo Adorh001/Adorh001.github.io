@@ -1,245 +1,369 @@
-﻿       body {
-            background-color: #FFFFFF;
-            color: #333333;
-            background-image: url(https://wallpapercave.com/wp/wp1991719.jpg);
-            font-family: sans-serif;
-            padding: 20px;
-            margin: 0;
-        }
-        header {
-            margin-bottom: 20px;
-            background-color: #ec932f;
-            padding: .05%;
-            border-bottom: 2px solid #6F4E37;
-            text-align: center;
-            color: #e8612b;
-        }
-        main {
-            
-            background-color: #c1442f;
-            margin: 20px auto;
-            border-radius: 8px;
-            max-width: 1200px;
-            width: 90%;
-        }
+﻿/* General Styles */
+body {
+    background-color: #FFFFFF;
+    color: #EEE;
+    /* Light text for readability */
+    background-image: url(https://wallpapercave.com/wp/wp1991719.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    line-height: 1.6;
+    /* Improved readability */
+}
 
-        @media (min-width: 786px){
-            main{
-                width: 80%;
-            }
-        }
+/* Header */
+header {
+    margin-bottom: 20px;
+    background-color: #411E11;
+    /* Black Coffee */
+    padding: 1rem;
+    border-bottom: 4px solid #BA4D2C;
+    /* Persian Red */
+    text-align: center;
+    color: #EE9638;
+    /* Tangerine for contrast */
+    font-size: 1rem;
+    font-weight: bold;
+}
 
-        @media (min-width: 1024px){
-            main{
-                width: 70%;
-                max-width: 1000px;
-            }
-        }
+/* Main Content */
+main {
+    background-color: rgba(65, 30, 17, 0.9);
+    /* Black Coffee with transparency */
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    width: 90%;
+    color: #EEE;
+    /* Light text for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for focus */
+}
 
-        @media (min-width: 1440px){
-            main{
-                width: 60%;
-                max-width: 1200px;
-            }
-        }
+@media (min-width: 786px) {
+    main {
+        width: 80%;
+    }
+}
 
-        footer {
-            background-color: #ec932f;
-            text-align: center;
-            position: sticky;
-            width: 100%;
-            bottom: 0;
-            color: #e8612b;
-        }
+@media (min-width: 1024px) {
+    main {
+        width: 70%;
+        max-width: 1000px;
+    }
+}
 
-        .footer{
-            color: #492310;
-        }
-        h2{
-            color: #f5b249;
-            text-align: center;
-        }
-        p{
-            color: #f5b249;
-        }
-        section{
-            color: #f5b249;
-        }
-        a {
-            color: #743619;
-        }
-        a:visited {
-            color: #966d4d;
-        }
-        .menu {
-            margin-top: 10px;
-        }
-        .menu a {
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .locket {
-            width: 200px;
-            height: 250px; 
-            background-size: cover;
-            background-position: center;
-            border-radius: 50% / 70%;
-            
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-           display: block;
-           margin-left: auto;
-           margin-right: auto;
-        }
+@media (min-width: 1440px) {
+    main {
+        width: 60%;
+        max-width: 1200px;
+    }
+}
 
-        #locket {
-            width: 200px;
-            height: 250px; 
-            background-size: cover;
-            background-position: center;
-            border-radius: 50% / 70%;
-            
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-           display: block;
-           margin-left: auto;
-           margin-right: auto;
-        }
+/* Footer */
+footer {
+    background-color: #411E11;
+    /* Black Coffee */
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    color: #EE9638;
+    /* Tangerine */
+    font-size: 1rem;
+    border-top: 4px solid #BA4D2C;
+    /* Persian Red */
+}
 
-        #render {
-            max-width: 50%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border: 2px solid #6F4E37;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+/* Headings and Text */
+h2 {
+    color: #EE9638;
+    /* Tangerine */
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-      
-        #employee-data {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2% 0;
-            font-size: 18px;
-            text-align: left;
-        }
+h3,
+p,
+section {
+    color: #f5b249;
+    /* Lighter Tangerine */
+    margin-bottom: 1rem;
+    text-align: justify;
+}
 
-        #employee-data th, #employee-data td {
-            border: 1px solid #ddd;
-            padding: 12px;
-        }
+/* Links */
+a {
+    color: #BA4D2C;
+    /* Persian Red */
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        #employee-data th {
-            background-color: #ec932f;
-            color: white;
-            text-align: center;
-        }
+a:visited {
+    color: #8F462A;
+    /* Dark Brown */
+}
 
-        #employee-data td {
-            background-color: #f9f9f9;
-        }
+a:hover {
+    color: #EE9638;
+    /* Tangerine on hover */
+}
 
-        #employee-data tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+/* Navigation Menu */
+.menu {
+    margin-top: 10px;
+    text-align: center;
+}
 
-        #employee-data tr:hover {
-            background-color: #ddd;
-        }
+.menu a {
+    margin: 0 15px;
+    padding: 10px;
+    color: #EEE;
+    /* Light text */
+    background-color: #411E11;
+    /* Black Coffee */
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        #employee-data .department {
-            background-color: #f5b249;
-            font-weight: bold;
-            text-align: center;
-            vertical-align: middle;
-        }
+.menu a:hover {
+    background-color: #EE9638;
+    /* Tangerine */
+    color: #411E11;
+    /* Black Coffee for contrast */
+}
 
-        @media (max-width: 600px){
-            #employee-data, #employee-data th, #employee-data td{
-                padding: 8px;
-            }
-        }
+/* Tables */
+#employee-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2% 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white */
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-        form {
-            width: 60%;
-            margin: 0 auto;
-            background-color: #BA4D2C;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+#employee-data th,
+#employee-data td {
+    border: 1px solid #000000;
+    padding: 12px;
+}
 
-        @media (min-width: 786px){
-            form{
-                width: 70%;
-            }
-        }
+#employee-data th {
+    background-color: #BA4D2C;
+    /* Persian Red */
+    color: #f5b249;
+    /* Light text */
+    text-align: center;
+}
 
-        @media (min-width: 1024px){
-            form{
-                width: 50%;
-            }
-        }
+#employee-data td {
+    background-color: #411E11;
+    /* Light gray */
+}
 
-        form label {
-            display: block;
-            margin-top: 15px;
-            font-size: 16px;
-            color: #EE9638;
-        }
+#employee-data tr:nth-child(even) {
+    background-color: #F2F2F2;
+    /* Slightly darker gray */
+}
 
-        form input[type="text"],
-        form input[type="email"],
-        form select {
-            width: 100%;
-            margin-top: 5px;
-            border: 1px solid #411E11;
-            border-radius: 4px;
-            font-size: 16px;
-        }
+#employee-data tr:hover {
+    background-color: #EEE;
+    /* Light text background */
+}
 
-        fieldset {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ec932f;
-            border-radius: 8px;
-            background-color: #8F462A;
-        }
+#employee-data .department {
+    background-color: #f5b249;
+    /* Lighter Tangerine */
+    font-weight: bold;
+    text-align: center;
+}
 
-        legend {
-            font-weight: bold;
-            color: #EE9638;
-        }
+/* Forms */
+form {
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 1.5rem;
+    background-color: rgba(186, 77, 44, 0.9);
+    /* Persian Red with transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #EEE;
+    /* Light text */
+}
 
-        fieldset label {
-            display: inline-block;
-            margin-right: 10px;
-            font-size: 14px;
-        }
+@media (min-width: 786px) {
+    form {
+        width: 70%;
+    }
+}
 
-        .form-buttons {
-            margin-top: 20px;
-            text-align: center;
-        }
+@media (min-width: 1024px) {
+    form {
+        width: 50%;
+    }
+}
 
-        button {
-            padding: 10px 20px;
-            background-color: #ec932f;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 10px;
-        }
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    color: #EE9638;
+    /* Tangerine */
+}
 
-        button:hover {
-            background-color: #e8612b;
-        }
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    margin-top: 5px;
+    /* Black Coffee */
+    border-radius: 4px;
+    font-size: 16px;
+}
 
-        button[type="reset"] {
-            background-color: #ddd;
-        }
+form input,
+form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
 
-        button[type="reset"]:hover {
-            background-color: #ccc;
-        }
+fieldset {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ec932f;
+    border-radius: 8px;
+    background-color: #8F462A;
+    /* Dark Brown */
+}
 
+legend {
+    font-weight: bold;
+    color: #EE9638;
+    /* Tangerine */
+}
+
+fieldset label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #EEE;
+    /* Light text */
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #BA4D2C;
+    /* Persian Red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #EE9638;
+    /* Tangerine */
+}
+
+button[type="reset"] {
+    background-color: #DDD;
+    /* Light gray */
+}
+
+button[type="reset"]:hover {
+    background-color: #CCC;
+    /* Slightly darker gray */
+}
+
+.locket {
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50% / 70%;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#locket {
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50% / 70%;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#render {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #6F4E37;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow Styling */
+section {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+figure {
+    display: none;
+    /* Hide all images initially */
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Show the first figure initially */
+figure:first-of-type {
+    display: block;
+}
+
+/* Navigation Buttons */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}

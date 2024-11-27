@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjartey Dorh | ITIS3135 Introduction</title>
+    <link rel="stylesheet" href="./styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Welcome to FirstScripts!</h2>
+
+        <!-- Time, Day, Date -->
+        <h3 id="current-date-time"></h3>
+
+        <!-- User Input Form -->
+        <form id="user-info-form" onsubmit="handleFormSubmit(event);">
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" required>
+
+            <label for="user-mood">How are you feeling today?</label>
+            <input type="text" id="user-mood" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Greeting Message -->
+        <h3 id="greeting-message"></h3>
+
+        <!-- Polygon Finder -->
+        <label for="favorite-number">Enter your favorite number (0-10):</label>
+        <input type="number" id="favorite-number" step="any" required>
+        <button onclick="findPolygonName();">Find Polygon</button>
+
+        <!-- Animal Brand Functions -->
+        <h3>Animal Brand Special Functions</h3>
+        <button onclick="provideRandomFact();">Provide a Random Fact</button>
+        <button onclick="generateAnimalJoke();">Generate an Animal Joke</button>
+        <button onclick="calculateAnimalAge();">Calculate Animal Age</button>
+        <button onclick="suggestAnimalCareTips();">Suggest Animal Care Tips</button>
+        <button onclick="recommendRandomAnimal();">Recommend a Random Animal</button>
+    </main>
+
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
+</body>
+
+</html>
