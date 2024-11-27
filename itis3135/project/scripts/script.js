@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Map of game identifiers to their embed code
     const gameEmbeds = {
-        "teen-titans": `<iframe src="https://archive.org/embed/teen-titans-battle-blitz-game" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
-        "samurai-jack": `<iframe src="https://archive.org/embed/2675-samurai-jack-code-of-the-samurai" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
+        "teen-titans": `<iframe src="https://archive.org/embed/teen-titans-battle-blitz-game" width="800" height="600" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
+        "samurai-jack": `<iframe src="https://archive.org/embed/2675-samurai-jack-code-of-the-samurai" width="800" height="600" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
         "bullet-time": `<embed src="https://www.twoplayergames.org/embed/bullet-time-fighting" width="800" height="600" />`,
-        "super-smash": `<iframe src="https://archive.org/embed/supersmashflash_swf" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
-        "bloons-td": `<iframe src="https://archive.org/embed/btd1_20220404" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
+        "super-smash": `<iframe src="https://archive.org/embed/supersmashflash_swf" width="800" height="600" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
+        "bloons-td": `<iframe src="https://archive.org/embed/btd1_20220404" width="800" height="600" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`,
     };
 
     // Reference the game container

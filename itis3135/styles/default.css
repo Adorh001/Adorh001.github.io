@@ -1,28 +1,27 @@
-﻿body {
-    background-color: #FFFFFF;
-    color: #333333;
-    background-image: url(https://wallpapercave.com/wp/wp1991719.jpg);
-    font-family: sans-serif;
-    padding: 20px;
-    margin: 0;
-}
-
-header {
-    margin-bottom: 20px;
-    background-color: #ec932f;
-    padding: .05%;
-    border-bottom: 2px solid #6F4E37;
-    text-align: center;
-    color: #e8612b;
-}
-
-main {
-    background-color: #c1442f;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 1200px;
-}
+﻿       body {
+            background-color: #FFFFFF;
+            color: #333333;
+            background-image: url(https://wallpapercave.com/wp/wp1991719.jpg);
+            font-family: sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        header {
+            margin-bottom: 20px;
+            background-color: #ec932f;
+            padding: .05%;
+            border-bottom: 2px solid #6F4E37;
+            text-align: center;
+            color: #e8612b;
+        }
+        main {
+            
+            background-color: #c1442f;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 1200px;
+            width: 90%;
+        }
 
         @media (min-width: 786px){
             main{
@@ -115,20 +114,6 @@ main {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        article table{
-            border-collapse: collapse;
-            width: 100%;
-            margin-bottom: 50px;
-        }
-        article th, article td{
-            border: 1px solid #050202;
-            padding: 8px;
-            text-align: left;
-        }
-        article th{
-            background-color: #BA4D2C;
-        }
-
       
         #employee-data {
             width: 100%;
@@ -137,37 +122,36 @@ main {
             font-size: 18px;
             text-align: left;
         }
-        
+
         #employee-data th, #employee-data td {
             border: 1px solid #ddd;
             padding: 12px;
         }
-        
+
         #employee-data th {
-            background-color: #ec932f; 
+            background-color: #ec932f;
             color: white;
             text-align: center;
         }
-        
-        #employee-data tbody tr:nth-child(odd) {
-            background-color: #EE9638; 
+
+        #employee-data td {
+            background-color: #f9f9f9;
         }
-        
-        #employee-data tbody tr:nth-child(even) {
-            background-color: #F5B249;
+
+        #employee-data tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
-        
+
         #employee-data tr:hover {
-            background-color: #e8612b;
+            background-color: #ddd;
         }
-        
+
         #employee-data .department {
             background-color: #f5b249;
             font-weight: bold;
             text-align: center;
             vertical-align: middle;
         }
-        
 
         @media (max-width: 600px){
             #employee-data, #employee-data th, #employee-data td{
@@ -176,8 +160,8 @@ main {
         }
 
         form {
+            width: 60%;
             margin: 0 auto;
-            padding: 20px;
             background-color: #BA4D2C;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -201,11 +185,11 @@ main {
             font-size: 16px;
             color: #EE9638;
         }
-        
+
         form input[type="text"],
         form input[type="email"],
         form select {
-            padding: 10px;
+            width: 100%;
             margin-top: 5px;
             border: 1px solid #411E11;
             border-radius: 4px;
