@@ -1,0 +1,27 @@
+{
+    "title": "Adjartey Dorh || ITIS3135 || Ambitious Wolf We want to make games fun again.",
+    "menus": [
+        {
+            "items": [
+                {"name": "Home", "url": "index.html"},
+                {"name": "Contract", "url": "Contract.html"},
+                {"name": "Introduction", "url": "introduction.html"},
+                {"name": "About", "url": "about.html"},
+                {"name": "Tables", "url": "tables.html"},
+                {"name": "Form", "url": "form.html"},
+                {"name": "Website Evaluations", "url": "website_evaluations.html"},
+                {"name": "Bad Ideas", "url": "badIdeas.html"},
+                {"name": "Byo Intro", "url": "byo_intro.html"},
+                {"name": "First Script", "url": "firstscripts.html"},
+                {"name": "Interactive Drawing", "url": "drawing.html"},
+                {"name": "Slideshow", "url": "slideshow.html"},
+                {"name": "Peer Review 1", "url": "peerReview1.html"},
+                {"name": "Peer Review 2", "url": "peerReview2.html"},
+                {"name": "Design Firm", "url": "DorhDesigns/firm.html"},
+                {"name": "Project Overview", "url": "Project_Overview.html"},
+                {"name": "Client Site", "url": "project/"},
+                {"name": "Hobby", "url": "Hobby/"}
+            ]
+        }
+    ]
+}
