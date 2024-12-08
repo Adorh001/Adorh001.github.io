@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timeline | Game Museum</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/slideshow-timeline.js" defer></script>
 </head>
+
 <body>
   <header>
     <div data-include="components/header.html"></div>
   </header>
+
   <main>
-    <section>
-      <h2>Gaming Through the Ages</h2>
-      <p>Trace the evolution of video games:</p>
-      <ul>
-        <li>1972 - Pong releases, sparking a revolution in gaming.</li>
-        <li>1980 - Pac-Man becomes a cultural phenomenon.</li>
-        <li>1996 - Nintendo 64 introduces 3D platforming with Super Mario 64.</li>
-        <li>2007 - Call of Duty 4 popularizes online multiplayer gaming.</li>
-      </ul>
+    <section class="timeline-hero">
+      <h1>Our garden of Gaming.</h1>
+      <p>Explore the the flash games in our archive.</p>
     </section>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow">
+      <figure>
+        <img src="images/codeofthesamurai.png" alt="Samurai Jack">
+      </figure>
+      <figure>
+        <img src="images/bft.png" alt="Bullet Fighting Time">
+      </figure>
+      <figure>
+        <img src="images/megasvsuniverse.png" alt="Megas XLR">
+
+      </figure>
+      <figure>
+        <img src="images/1_menu.png" alt="Super Smash Flash 1">
+      </figure>
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </section>
+
+    <!-- Game Descriptions -->
+    <ul id="game-descriptions">
+      <li>2003: Samurai Jack - A rogue-like adventure fighting the dark wizard Aku.</li>
+      <li>2004: Bullet Fighting Time - An arcade fighter inspired by The Matrix.</li>
+      <li>2004: Megas XLR - A 2D shooter inspired by the TV series.</li>
+      <li>2005: Super Smash Flash 1 - A fan-made Smash Bros. with 28 characters.</li>
+    </ul>
   </main>
+
   <footer>
     <div data-include="components/footer.html"></div>
   </footer>
-  <script src="scripts/include.js"></script>
-  <script src="js/script.js"></script>
 </body>
+<script src="scripts/include.js"></script>
+<script src="scripts/timeline.js"></script>
+
 </html>

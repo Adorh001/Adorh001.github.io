@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Game Museum</title>
+  <title>About Us | Game Museum</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/timeline.js" defer></script>
 </head>
+
 <body>
   <header>
     <div data-include="components/header.html"></div>
   </header>
+
   <main>
-    <section>
-      <h2>About the Game Museum</h2>
-      <p>The Game Museum was founded to archive and celebrate the history of video games from the early arcades to the modern console era.</p>
-      <p>Our mission is to ensure gaming's legacy remains accessible and cherished.</p>
-      <p>Since the loss of Adobe Flash, the lawsuit that the internet archive faces
-        and the many companies from our childhood that have faded away.
-        It is our duty to preserve history for future generations to come.
-      </p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to the Game Museum</h1>
+      <p>Discover the history, culture, and evolution of video games through our curated collection.</p>
+      <img src="images/hero.png" alt="Retro gaming banner" class="hero-image">
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <h2>About Us</h2>
+      <p>The Game Museum celebrates the rich history of video games, from the golden age of arcades to modern consoles. Our mission is to preserve and share the stories behind the games that shaped generations.</p>
+      <p>Founded by passionate gamers, the museum features rare artifacts, immersive exhibits, and interactive experiences for all ages.</p>
+    </section>
+
+    <!-- Interactive Timeline Placeholder -->
+    <section class="timeline-section">
+      <h2>Our Journey</h2>
+      <div id="interactive-timeline">
+        <!-- Interactive timeline will be generated here by JavaScript -->
+      </div>
     </section>
   </main>
+
   <footer>
     <div data-include="components/footer.html"></div>
   </footer>
-  <script src="scripts/include.js"></script>
-  <script src="js/script.js"></script>
 </body>
+<script src="scripts/include.js"></script>
+<script src="scripts/script.js"></script>
 </html>

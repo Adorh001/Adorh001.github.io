@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to dynamically fetch and insert JSON data into a container
     function fetchAndInsertJSON(jsonPath, createElementFn, containerSelector, position = "append") {
         fetch(jsonPath)
-            .then(response => {
+            .then((response) => {
                 if (!response.ok) {
                     throw new Error(`Failed to fetch ${jsonPath}: ${response.statusText}`);
                 }
                 return response.json();
             })
-            .then(data => {
+            .then((data) => {
                 const container = document.querySelector(containerSelector);
                 const element = createElementFn(data);
                 if (position === "append") {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     container.insertBefore(element, container.firstChild);
                 }
             })
-            .catch(error => console.error(`Error fetching JSON from ${jsonPath}:`, error));
+            .catch((error) => console.error(`Error fetching JSON from ${jsonPath}:`, error));
     }
 
     // Create the header element from JSON data
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         header.appendChild(title);
 
         // Process menus
-        data.menus.forEach(menu => {
+        data.menus.forEach((menu) => {
             const nav = document.createElement("nav");
             menu.items.forEach((item, index) => {
                 const menuItem = document.createElement("a");
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         footer.appendChild(certification);
 
         // Validation images
-        Object.keys(data.validationImages).forEach(key => {
+        Object.keys(data.validationImages).forEach((key) => {
             const validationAnchor = document.createElement("a");
             validationAnchor.href = data.validationImages[key].url + location.href;
             validationAnchor.innerHTML = `<img style="border:0;width:88px;height:31px" 

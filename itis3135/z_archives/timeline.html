@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline | Game Museum</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  
+  <main>
+    <section>
+      <h2>History of our collection</h2>
+      <p>The history of our games:</p>
+      <ul id="game-descriptions">
+        <li data-slide="0">Megas XLR: Megas vs the Universe - Created by "This is Pop" to promote the TV series Megas XLR. This 2D shooter highlights the show's destructive nature.</li>
+        <li data-slide="1">Bullet Fighting Time - Released in 2004, this arcade fighter mimics The Matrix. Players dodge bullets and combat enemies with kicks and punches.</li>
+        <li data-slide="2">Samurai Jack: Code of Samurai - A 2D rogue-like arcade game promoting Samurai Jack. Use honor and valor to fight Aku.</li>
+        <li data-slide="3">Super Smash Flash 1 - A fan-made Super Smash Brothers game with 28 playable characters, including fan creations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Slideshow</h2>
+      <figure>
+        <img src="images/megasvsuniverse.png" alt="Megas XLR: Megas vs the Universe">
+      </figure>
+      <figure>
+        <img src="images/bft.png" alt="Bullet Fighting Time">
+      </figure>
+      <figure>
+        <img src="images/codeofthesamurai.png" alt="Samurai Jack: Code of Samurai">
+      </figure>
+      <figure>
+        <img src="images/1_menu.png" alt="Super Smash Flash 1">
+      </figure>
+
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </section>
+  </main>
+  
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  
+  <script src="scripts/include.js"></script>
+  <script src="scripts/slideshow.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 /* General Reset */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #45271B; /* Saddle Brown background */
@@ -16,31 +16,21 @@ header, footer {
   padding: 1.5rem;
 }
 
-header h1, footer p {
+footer p {
   margin: 0;
   color: #EE9638; /* Tangerine for highlights */
 }
 
-footer p {
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: #BA4D2C; /* Persian Red for footer links */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  color: #EE9638; /* Tangerine on hover */
+h1 {
+  color: #EE9638;
 }
 
 /* Navigation Bar */
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
   text-align: center;
+  margin: 1rem 0;
 }
 
 nav ul li {
@@ -52,24 +42,23 @@ nav ul li a {
   color: #EE9638; /* Tangerine links */
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
   color: #BA4D2C; /* Persian Red on hover */
-  transform: scale(1.1); /* Subtle zoom effect */
 }
 
 /* Main Section */
 main {
+
   background-color: #8F462A; /* Dark Brown for section backgrounds */
   margin: 2rem auto;
   width: 90%;
   max-width: 1200px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
 }
 
 /* Hero Section */
@@ -82,35 +71,29 @@ main {
   margin-bottom: 2rem;
 }
 
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+
 
 .hero p {
   font-size: 1.2rem;
-  line-height: 1.8;
 }
 
 /* Forms */
 form input, form textarea, form button {
   display: block;
-  margin: 1rem auto;
+  margin: 1rem 0;
+
   max-width: 500px;
-  width: 100%;
-  padding: 0.8rem;
+
   font-size: 1rem;
   border: 2px solid #BA4D2C; /* Persian Red border */
   border-radius: 4px;
   background-color: #EEE; /* Light background for inputs */
   color: #411E11; /* Dark text for readability */
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form input:focus, form textarea:focus {
   border-color: #EE9638; /* Tangerine focus state */
   outline: none;
-  box-shadow: 0 0 6px rgba(238, 150, 56, 0.6); /* Tangerine glow */
 }
 
 form button {
@@ -118,16 +101,11 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s;
 }
 
 form button:hover {
   background-color: #EE9638; /* Tangerine on hover */
-  transform: translateY(-2px); /* Subtle hover lift */
-}
-
-form button:active {
-  transform: translateY(0); /* Reset lift on click */
 }
 
 /* Lists */
@@ -139,38 +117,12 @@ ul {
   color: #EEE; /* Light text */
   max-width: 600px;
   margin: 1rem auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Proximity and Alignment */
 ul li {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  line-height: 1.5;
-}
-
-ul li:last-child {
-  margin-bottom: 0; /* Remove extra margin for the last item */
-}
-
-/* Buttons */
-button {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-  background-color: #BA4D2C; /* Persian Red */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-  background-color: #EE9638; /* Tangerine */
-  transform: scale(1.05); /* Slight zoom effect */
-}
-
-button:active {
-  transform: scale(1); /* Reset zoom on click */
 }
 
 /* Footer */
@@ -181,8 +133,4 @@ footer {
   color: white;
   font-size: 0.9rem;
   border-top: 4px solid #BA4D2C; /* Persian Red border accent */
-}
-
-footer p {
-  margin: 0.5rem 0;
 }

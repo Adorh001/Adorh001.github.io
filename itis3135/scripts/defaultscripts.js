@@ -1,85 +1,55 @@
-// Display Current Date, Day, and Time
-document.addEventListener("DOMContentLoaded", () => {
-    const currentDate = new Date();
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const day = dayNames[currentDate.getDay()];
-    const date = currentDate.getDate();
-    const month = monthNames[currentDate.getMonth()];
-    const year = currentDate.getFullYear();
-    const time = currentDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    
-    document.getElementById("current-date-time").textContent = `Today is ${time} on ${day}, ${date} ${month}, ${year}.`;
+document.addEventListener("DOMContentLoaded", function () {
+    // Time, Day, Date
+    function updateDateTime() {
+        const now = new Date();
+        const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const day = now.toLocaleDateString([], { weekday: 'long' });
+        const date = now.toLocaleDateString();
+        document.getElementById("current-date-time").textContent = `Today is ${time} on ${day}, ${date}`;
+    }
+    updateDateTime();
+
+    // Handle Form Submission
+    document.getElementById("user-info-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = document.getElementById("user-name").value;
+        const mood = document.getElementById("user-mood").value;
+        const message = `The Animal Kingdom welcomes you, ${name}! We're glad you are feeling ${mood}!`;
+        document.getElementById("greeting-message").textContent = message;
+    });
+
+    // Polygon Finder
+    document.getElementById("find-polygon-btn").addEventListener("click", function () {
+        const numberInput = document.getElementById("favorite-number").value;
+        const number = Math.abs(Math.round(parseFloat(numberInput)));
+        const polygonNames = ["null", "monogon", "digon", "trigon", "tetragon", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
+        const polygonName = polygonNames[number] || "an unknown polygon";
+        alert(`Your favorite number corresponds to ${polygonName}.`);
+    });
+
+    // Animal Brand Functions
+    document.getElementById("random-fact-btn").addEventListener("click", function () {
+        alert("Did you know? A group of flamingos is called a flamboyance!");
+    });
+
+    document.getElementById("animal-joke-btn").addEventListener("click", function () {
+        alert("Why don’t cats play poker in the jungle? Too many cheetahs!");
+    });
+
+    document.getElementById("animal-age-btn").addEventListener("click", function () {
+        const humanYears = prompt("Enter the age of your pet in human years:");
+        if (humanYears) {
+            alert(`In animal years, your pet might be around ${humanYears * 7} years old!`);
+        }
+    });
+
+    document.getElementById("animal-care-tips-btn").addEventListener("click", function () {
+        alert("Tip: Regular vet check-ups keep your pets healthy and happy!");
+    });
+
+    document.getElementById("random-animal-btn").addEventListener("click", function () {
+        const animals = ["Panda", "Dolphin", "Eagle", "Koala", "Lion"];
+        const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+        alert(`How about learning more about the ${randomAnimal}?`);
+    });
 });
-
-// Handle Form Submission for User Name and Mood
-function handleFormSubmit(event) {
-    event.preventDefault();
-    const userName = document.getElementById("user-name").value;
-    const userMood = document.getElementById("user-mood").value;
-
-    const companyName = "Animal Brand Company";
-    const greetingMessage = `The ${companyName} welcomes you, ${userName}! We're glad you are doing ${userMood}!`;
-
-    document.getElementById("greeting-message").textContent = greetingMessage;
-}
-
-// Find Polygon Name Based on User Input
-function findPolygonName() {
-    const polygons = ["monogon", "digon", "triangle", "quadrilateral", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon", "hendecagon"];
-    let favoriteNumber = parseFloat(document.getElementById("favorite-number").value);
-
-    if (isNaN(favoriteNumber)) {
-        alert("Please enter a valid number.");
-        return;
-    }
-
-    favoriteNumber = Math.abs(Math.round(favoriteNumber)); // Convert to positive integer
-    const polygonName = polygons[favoriteNumber] || "unknown polygon";
-
-    alert(`A polygon with ${favoriteNumber} sides is called a ${polygonName}.`);
-}
-
-// Animal Brand Functions
-function provideRandomFact() {
-    const facts = [
-        "An octopus has three hearts.",
-        "Cows have best friends and get stressed when they are apart.",
-        "Dolphins have names for each other.",
-        "A group of flamingos is called a 'flamboyance'."
-    ];
-    alert(facts[Math.floor(Math.random() * facts.length)]);
-}
-
-function generateAnimalJoke() {
-    const jokes = [
-        "Why do cows wear bells? Because their horns don’t work!",
-        "What do you call a fish with no eyes? Fsh!",
-        "Why did the scarecrow win an award? Because he was outstanding in his field!"
-    ];
-    alert(jokes[Math.floor(Math.random() * jokes.length)]);
-}
-
-function calculateAnimalAge() {
-    const age = prompt("Enter your age in human years:");
-    if (!age || isNaN(age)) {
-        alert("Please enter a valid age.");
-        return;
-    }
-    const dogAge = age * 7;
-    alert(`In dog years, you are ${dogAge} years old!`);
-}
-
-function suggestAnimalCareTips() {
-    const tips = [
-        "Always provide fresh water for your pets.",
-        "Regular vet checkups are essential for a healthy pet.",
-        "Play and exercise are just as important for pets as for humans!"
-    ];
-    alert(tips[Math.floor(Math.random() * tips.length)]);
-}
-
-function recommendRandomAnimal() {
-    const animals = ["Penguin", "Koala", "Tiger", "Elephant", "Dolphin"];
-    alert(`You should check out the ${animals[Math.floor(Math.random() * animals.length)]}!`);
-}

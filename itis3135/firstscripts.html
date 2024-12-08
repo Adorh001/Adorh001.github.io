@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <main>
         <h2>Welcome to FirstScripts!</h2>
 
@@ -19,7 +17,7 @@
         <h3 id="current-date-time"></h3>
 
         <!-- User Input Form -->
-        <form id="user-info-form" onsubmit="handleFormSubmit(event);">
+        <form id="user-info-form">
             <label for="user-name">Your Name:</label>
             <input type="text" id="user-name" required>
 
@@ -35,17 +33,16 @@
         <!-- Polygon Finder -->
         <label for="favorite-number">Enter your favorite number (0-10):</label>
         <input type="number" id="favorite-number" step="any" required>
-        <button onclick="findPolygonName();">Find Polygon</button>
+        <button id="find-polygon-btn">Find Polygon</button>
 
         <!-- Animal Brand Functions -->
         <h3>Animal Brand Special Functions</h3>
-        <button onclick="provideRandomFact();">Provide a Random Fact</button>
-        <button onclick="generateAnimalJoke();">Generate an Animal Joke</button>
-        <button onclick="calculateAnimalAge();">Calculate Animal Age</button>
-        <button onclick="suggestAnimalCareTips();">Suggest Animal Care Tips</button>
-        <button onclick="recommendRandomAnimal();">Recommend a Random Animal</button>
+        <button id="random-fact-btn">Provide a Random Fact</button>
+        <button id="animal-joke-btn">Generate an Animal Joke</button>
+        <button id="animal-age-btn">Calculate Animal Age</button>
+        <button id="animal-care-tips-btn">Suggest Animal Care Tips</button>
+        <button id="random-animal-btn">Recommend a Random Animal</button>
     </main>
-
 
     <script src="scripts/nav.js"></script>
     <script src="scripts/defaultscripts.js"></script>
