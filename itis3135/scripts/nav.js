@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to dynamically fetch and insert JSON data into a container
+    /**
+     * Function to dynamically fetch and insert JSON data into a container.
+     * @param {string} jsonPath - The path to the JSON file.
+     * @param {function} createElementFn - Function to create elements from JSON data.
+     * @param {string} containerSelector - Selector for the container where elements will be inserted.
+     * @param {string} position - Position to insert elements ("append" or "prepend").
+     */
     function fetchAndInsertJSON(jsonPath, createElementFn, containerSelector, position = "append") {
         fetch(jsonPath)
             .then((response) => {
@@ -20,7 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch((error) => console.error(`Error fetching JSON from ${jsonPath}:`, error));
     }
 
-    // Create the header element from JSON data
+    /**
+     * Create the header element from JSON data.
+     * @param {object} data - JSON data for the header.
+     * @returns {HTMLElement} The constructed header element.
+     */
     function createHeader(data) {
         const header = document.createElement("header");
 
@@ -50,7 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return header;
     }
 
-    // Create the footer element from JSON data
+    /**
+     * Create the footer element from JSON data.
+     * @param {object} data - JSON data for the footer.
+     * @returns {HTMLElement} The constructed footer element.
+     */
     function createFooter(data) {
         const footer = document.createElement("footer");
 
@@ -64,19 +78,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Add separator except for the last link
             if (index < data.footerNavLinks.length - 1) {
-                footerNav.appendChild(document.createTextNode(" ~ "));
+                footerNav.appendChild(document.createTextNode(" | "));
             }
         });
         footer.appendChild(footerNav);
 
         // Footer text
         const pDesignedBy = document.createElement("p");
-        pDesignedBy.innerHTML = data.footerText.designedBy;
+        pDesignedBy.textContent = data.footerText.designedBy;
         footer.appendChild(pDesignedBy);
 
-        const certification = document.createElement("p");
-        certification.innerHTML = data.footerText.certification;
-        footer.appendChild(certification);
+        // Render certifications dynamically
+        const certifications = document.createElement("p");
+        certifications.textContent = "Certified in: ";
+        data.footerText.certifications.forEach((cert, index) => {
+            const certLink = document.createElement("a");
+            certLink.href = cert.url;
+            certLink.target = "_blank";
+            certLink.textContent = cert.name;
+            certifications.appendChild(certLink);
+
+            // Add separator except for the last certification
+            if (index < data.footerText.certifications.length - 1) {
+                certifications.appendChild(document.createTextNode(" | "));
+            }
+        });
+        footer.appendChild(certifications);
 
         // Validation images
         Object.keys(data.validationImages).forEach((key) => {

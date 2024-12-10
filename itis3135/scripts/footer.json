@@ -1,15 +1,24 @@
 {
     "footerNavLinks": [
-        {"name": "Personal Page", "url": "https://webpages.charlotte.edu/adorh/"},
-        {"name": "Github Profile", "url": "https://github.com/Adorh001"},
-        {"name": "Linkedin", "url": "https://www.linkedin.com/in/adorh001/"},
-        {"name": "Freecodecamp", "url": "https://www.freecodecamp.org/Adorh"},
-        {"name": "GitHub.io", "url": "https://github.com/Adorh001/Adorh001.github.io"},
-        {"name": "Codeacademy", "url": "https://www.codecademy.com/profiles/Adorh"}
+        { "name": "Personal Page", "url": "https://webpages.charlotte.edu/adorh/" },
+        { "name": "Github Profile", "url": "https://github.com/Adorh001" },
+        { "name": "Linkedin", "url": "https://www.linkedin.com/in/adorh001/" },
+        { "name": "Freecodecamp", "url": "https://www.freecodecamp.org/Adorh" },
+        { "name": "GitHub.io", "url": "https://github.com/Adorh001/Adorh001.github.io" },
+        { "name": "Codeacademy", "url": "https://www.codecademy.com/profiles/Adorh" }
     ],
     "footerText": {
-        "designedBy": "Designed by DorhDesigns. All rights reserved.©2024",
-        "certification": "Certified in <a href='https://www.freecodecamp.org/certification/Adorh/responsive-web-design' target='_blank'>Responsive Web Design</a>"
+        "designedBy": "Designed by DorhDesigns. All rights reserved. ©2024",
+        "certifications": [
+            {
+                "name": "Responsive Web Design",
+                "url": "https://www.freecodecamp.org/certification/Adorh/responsive-web-design"
+            },
+            {
+                "name": "Javascript Algorithms and Data Structures",
+                "url": "https://www.freecodecamp.org/certification/Adorh/javascript-algorithms-and-data-structures-v8"
+            }
+        ]
     },
     "validationImages": {
         "html": {

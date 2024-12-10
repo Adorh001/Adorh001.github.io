@@ -6,6 +6,7 @@ body {
   background-color: #45271B; /* Saddle Brown background */
   color: #EEE; /* Light text for contrast */
   line-height: 1.6;
+  box-sizing: border-box; /* Ensure padding and border are included in element's width/height */
 }
 
 /* Header and Footer */
@@ -16,12 +17,14 @@ header, footer {
   padding: 1.5rem;
 }
 
-header h1, footer p {
+h1 {
   margin: 0;
+  font-size: 2rem;
   color: #EE9638; /* Tangerine for highlights */
 }
 
 footer p {
+  margin: 0.5rem 0;
   font-size: 0.9rem;
 }
 
@@ -65,11 +68,11 @@ nav ul li a:hover {
 main {
   background-color: #8F462A; /* Dark Brown for section backgrounds */
   margin: 2rem auto;
-  width: 90%;
+  padding: 2rem;
+  width: calc(100% - 4rem); /* Avoid breaking box model */
   max-width: 1200px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
 }
 
 /* Hero Section */
@@ -82,12 +85,12 @@ main {
   margin-bottom: 2rem;
 }
 
-.hero h1 {
+.hero-title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
+.hero-description {
   font-size: 1.2rem;
   line-height: 1.8;
 }
@@ -97,7 +100,7 @@ form input, form textarea, form button {
   display: block;
   margin: 1rem auto;
   max-width: 500px;
-  width: 100%;
+  
   padding: 0.8rem;
   font-size: 1rem;
   border: 2px solid #BA4D2C; /* Persian Red border */
