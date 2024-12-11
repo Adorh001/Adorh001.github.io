@@ -9,18 +9,46 @@ body {
   box-sizing: border-box; /* Ensure padding and border are included in element's width/height */
 }
 
+img {
+ 
+  height: auto;
+  object-fit: cover; /* Ensures content fits without distortion */
+  max-width: 300px; /* Set a maximum size for uniformity */
+  border-radius: 8px; /* Adds a subtle curve for aesthetics */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a consistent shadow for contrast */
+  border: 3px solid #411E11; /* Dark border for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  img {
+      max-width: 100%; /* Scales down images for smaller screens */
+  }
+}
+
 /* Header and Footer */
 header, footer {
   background-color: #411E11; /* Black Coffee */
   color: white;
-  text-align: center;
-  padding: 1.5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
   margin: 0;
   font-size: 2rem;
   color: #EE9638; /* Tangerine for highlights */
+  flex-grow: 1;
+}
+
+h2 {
+  color: #EE9638;
+  /* Tangerine */
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 footer p {
@@ -39,30 +67,117 @@ footer a:hover {
 }
 
 /* Navigation Bar */
-nav ul {
-  list-style: none;
+/* General Reset */
+body, ul, li, a {
+  margin: 0;
   padding: 0;
-  margin: 1rem 0;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: #EE9638; /* Tangerine links */
+  list-style: none;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-nav ul li a:hover {
-  color: #BA4D2C; /* Persian Red on hover */
-  transform: scale(1.1); /* Subtle zoom effect */
+header {
+  background-color: #411E11; /* Black Coffee */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #EE9638; /* Tangerine */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #411E11; /* Black Coffee */
+  background-color: #EE9638; /* Tangerine */
+}
+
+.menu li .active {
+  background-color: #BA4D2C; /* Persian Red */
+  color: #FFF; /* White for contrast */
+}
+
+/* Hamburger Menu Styling */
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #EE9638; /* Tangerine */
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+    background-color: #411E11; /* Black Coffee */
+    padding: 1rem 2rem;
+    display: none;
+  }
+
+  .menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
+  .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
 
 /* Main Section */
 main {
